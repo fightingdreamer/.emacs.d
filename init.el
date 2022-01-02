@@ -82,14 +82,29 @@
 (use-package evil-textobj-line
   :straight t)
 
-;; (use-package evil-org
-;;   :straight
-;;   (evil-org
-;;    :files (:defaults "evil-org-agenda.el"))
-;;   :config
-;;   (require 'evil-org-agenda)
-;;   (evil-org-agenda-set-keys))
+(use-package magit
+  :straight t)
 
-;; tree-edit
-;; evil-collection
-;; evil-textobj-tree-sitter
+;; dark-theme
+;; (use-package tao-theme
+;;   :straight
+;;   (tao-theme-emacs :host github
+;; 		   :repo "11111000000/tao-theme-emacs")
+;;   :config
+;;   (load-theme 'tao-yin t))
+
+;; light-theme
+;; (use-package berrys-theme
+;;   :straight t
+;;   :config
+;;   (load-theme 'berrys t)
+;;   (setq-default cursor-type '(bar . 2))
+;;   (setq-default line-spacing 1))
+
+;; :themes
+;;   ancient-one-dark-theme
+;; :plugins
+;;   evil-org
+;;   tree-edit
+;;   evil-collection
+;;   evil-textobj-tree-sitter

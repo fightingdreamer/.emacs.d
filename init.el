@@ -1,10 +1,12 @@
+(set 'inhibit-startup-screen t)
+(set 'frame-resize-pixelwise t)
+
 (menu-bar-mode 0)
 (toggle-scroll-bar 0)
 (tool-bar-mode 0)
+(toggle-frame-maximized)
 
 (fset 'yes-or-no-p 'y-or-n-p)
-
-(set 'inhibit-startup-screen t)
 
 (set 'fonts-config-file "~/.emacs.d/fonts-config.el")
 (set 'fonts-custom-file "~/.emacs.d/fonts-custom.el")

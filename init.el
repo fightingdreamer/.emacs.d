@@ -63,14 +63,19 @@
   (global-company-mode t)
   (company-tng-mode t))
 
+(use-package undo-tree
+  :straight
+  (undo-tree :host gitlab.com
+	     :repo "tsc25/undo-tree")
+  :config
+  (set 'undo-tree-auto-save-history t)
+  (global-undo-tree-mode t))
+
 (use-package evil
   :straight t
   :init
-  (use-package undo-fu
-    :straight t
-    :config)
   :config
-  (evil-set-undo-system 'undo-fu)
+  (evil-set-undo-system 'undo-tree)
   (evil-mode t)
   ;; (define-key evil-motion-state-map (kbd "RET") nil)
   (set 'org-return-follows-link t))

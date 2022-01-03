@@ -98,8 +98,8 @@
 (use-package evil-textobj-line
   :straight t)
 
-(use-package magit
-  :straight t)
+;; (use-package magit
+;;   :straight t)
 
 ;; dark-theme
 ;; (use-package tao-theme

@@ -42,6 +42,11 @@
 
 (straight-use-package 'use-package)
 
+(use-package esup
+  :straight t
+  :config
+  (set 'esup-depth 0))
+
 (use-package org
   :straight t
   :config
@@ -84,6 +89,11 @@
   :straight t
   :config
   (global-evil-surround-mode t))
+
+(use-package evil-commentary
+  :straight t
+  :config
+  (evil-commentary-mode t))
 
 (use-package evil-textobj-line
   :straight t)

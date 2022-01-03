@@ -38,6 +38,7 @@
 
 (set 'package-enable-at-startup nil)
 (set 'straight-use-package-by-default t)
+(set 'straight-vc-git-default-clone-depth 1)
 
 (straight-use-package 'use-package)
 

@@ -95,6 +95,18 @@
   :config
   (evil-commentary-mode t))
 
+(use-package evil-org
+  :straight
+  (evil-org :type git
+	    :host github
+	    :repo "Somelauw/evil-org-mode"
+	    :files ("evil-org.el" "evil-org-agenda.el"))
+  :after org
+  :config
+  (require 'evil-org-agenda)
+  (evil-org-agenda-set-keys)
+  (add-hook 'org-mode-hook 'evil-org-mode))
+
 (use-package evil-textobj-line
   :straight t)
 

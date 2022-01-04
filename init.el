@@ -70,7 +70,7 @@
 
 (use-package undo-tree
   :straight
-  (undo-tree :host gitlab.com
+  (undo-tree :host gitlab
 	     :repo "tsc25/undo-tree")
   :config
   (set 'undo-tree-auto-save-history t)

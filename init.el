@@ -54,6 +54,7 @@
   :config
   (set 'org-id-track-globally t)
   (set 'org-log-done 'time)
+  (calendar-set-date-style 'iso)
   (set-face-attribute 'org-date nil :font main-font)
   (set-face-attribute 'org-block nil :font main-font)
   (set-face-attribute 'org-block-begin-line nil :font main-font))

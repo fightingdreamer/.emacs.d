@@ -1,3 +1,5 @@
+;; -*- coding: utf-8 -*-
+
 (set 'inhibit-startup-screen t)
 (set 'frame-resize-pixelwise t)
 

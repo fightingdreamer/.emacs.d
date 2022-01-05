@@ -23,6 +23,16 @@
 (set-language-environment "UTF-8")
 ;; (set-locale-environment "en")
 
+;; C-h C RET
+;; M-x describe-current-coding-system
+
+;; (prefer-coding-system 'utf-8-unix)
+;; (set-default-coding-systems 'utf-8-unix)
+;; (set-terminal-coding-system 'utf-8-unix)
+;; (set-keyboard-coding-system 'utf-8-unix)
+;; (set-selection-coding-system 'utf-8-unix)
+;; (setq-default buffer-file-coding-system 'utf-8-unix)
+
 (set 'custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 

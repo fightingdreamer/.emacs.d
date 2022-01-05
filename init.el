@@ -19,6 +19,9 @@
 
 (set-face-attribute 'default nil :font main-font)
 
+(set 'mac-right-option-modifier 'none) ; alias
+;; (set 'ns-right-alternate-modifier 'none) ; original
+
 (set 'system-time-locale "C")
 (set-language-environment "UTF-8")
 ;; (set-locale-environment "en")

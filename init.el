@@ -131,6 +131,14 @@
 (use-package evil-textobj-line
   :straight t)
 
+(use-package rebecca-theme
+  :straight t)
+
+(use-package zerodark-theme
+  :straight t)
+
+(load-theme 'zerodark)
+
 ;; (use-package magit
 ;;   :straight t)
 

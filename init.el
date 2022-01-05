@@ -58,6 +58,8 @@
 (set 'package-enable-at-startup nil)
 (set 'straight-use-package-by-default t)
 (set 'straight-vc-git-default-clone-depth 1)
+(set 'straight-vc-git-default-protocol 'ssh)
+(set 'straight-host-usernames '((github . "fightingdreamer")))
 
 (straight-use-package 'use-package)
 
@@ -138,7 +140,11 @@
   :straight t)
 
 (use-package zerodark-theme
-  :straight t)
+  :straight
+  (zerodark-theme :type git
+		  :host github
+		  :repo "NicolasPetton/zerodark-theme"
+		  :fork t))
 
 (load-theme 'zerodark)
 

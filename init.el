@@ -19,6 +19,10 @@
 
 (set-face-attribute 'default nil :font main-font)
 
+(set 'system-time-locale "C")
+(set-language-environment "UTF-8")
+;; (set-locale-environment "en")
+
 (set 'custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 

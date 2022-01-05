@@ -71,6 +71,7 @@
   (set 'org-agenda-files '("~/org"))
   (calendar-set-date-style 'iso)
   (set-face-attribute 'org-date nil :font main-font)
+  (set-face-attribute 'org-meta-line nil :font main-font)
   (set-face-attribute 'org-block nil :font main-font)
   (set-face-attribute 'org-block-begin-line nil :font main-font))
 
